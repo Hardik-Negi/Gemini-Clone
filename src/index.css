@@ -12,6 +12,7 @@
 #root{
    min-height: 100vh;
    display: flex;
+   animation: fadeIn 1.5s;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -22,6 +23,9 @@
    animation: loader 3s infinite linear;
 
  }
+ .sidebar .recent{
+   animation:fadeIn 1.5s;
+ }
 
  @keyframes loader{
    0%{
@@ -29,5 +33,20 @@
    }
    100%{
       background-position: 800px 0px;
+   }
+ }
+
+ @keyframes fadeIn{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+ }
+
+ @media (max-width:600px){
+   .sidebar{
+      display: none;
    }
  }

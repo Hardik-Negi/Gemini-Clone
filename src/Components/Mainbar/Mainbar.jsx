@@ -31,7 +31,7 @@ const Mainbar = () => {
             >
               <p>
                 <span className="bg-gradient-to-r from-[#4b90ff] to-[#ff5546]  bg-clip-text text-transparent">
-                  Hello, Dev.
+                  Hello, Hardik.
                 </span>
               </p>
               <p>How can I help you today?</p>
@@ -106,7 +106,7 @@ const Mainbar = () => {
                   bg-gradient-to-r from-[#9ed7ff] via-[#ffffff] to-[#9ed7ff] bg-[length:800px_50px] h-[20px]" />
                 </div>
               ) : (
-                <p className="text-[17px] font-light " dangerouslySetInnerHTML={{ __html: resultData }}></p>
+                <p className="text-[17px] font-light leading-[1.5]"   dangerouslySetInnerHTML={{ __html: resultData }}></p>
               )}
             </div>
           </div>
@@ -135,12 +135,12 @@ const Mainbar = () => {
                 src={assets.mic_icon}
                 alt=""
               />
-              <img
+             {input ? <img
                 onClick={() => onSent()}
                 className="w-[24px] cursor-pointer"
                 src={assets.send_icon}
                 alt=""
-              />
+              /> : null } 
             </div>
           </div>
           <p className="text-[13px] my-[15px] mx-auto text-center font-light">
