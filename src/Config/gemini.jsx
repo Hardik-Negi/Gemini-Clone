@@ -1,4 +1,4 @@
-//  const GEMINI_API_KEY="AIzaSyDFZYzS0cA6wjWIy8CRNe5e9_TSOW0u9vE"
+
 
  import {
    GoogleGenerativeAI,
